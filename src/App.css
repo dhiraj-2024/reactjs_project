@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .Contact{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .contact_section{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2px;
+    border: 3px outset #ffba50;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  
+    padding: 30px;
+  }
+  .container_first {
+  height:500px;
+  width: 40%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 80px 10px;
+  border-right: 2px solid rgb(255, 189, 57);
+  border-radius: 5px;
+  
+  
+  }
+  .container_first h1{
+    font-size: 30px;
+    font-weight: 900;
+    background: #CFB50D;
+  background: linear-gradient(to right, #CFB50D 0%, #CF7C00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .container_second {
+    height:500px;
+    width: 40%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding: 30px;
+    border-left: 2px solid rgb(255, 189, 57);
+    border-radius: 5px;
+    }
+    label{
+      font-size: 17px;
+      font-weight: 900;
+  
+    }
+    .span1{
+      color: red;
+    }
+    .span2{
+      font-size: 17px;
+      font-weight: 900;
+    }
+    .input_box{
+      
+      margin-top: 40px;
+    }
+  .input_box input{
+    margin-top: 7px;
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+  }
+  .btn_sub{
+    margin-top: 60px;
+    height: 40px;
+    width: 80px;
+  }
+  
+  
+  /* ************Button CSS ************ */
+  
+  .button-87 {
+    margin-top: 50px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0px 0px 14px -7px #fda831;
+    background-image: linear-gradient(45deg, #f1c148 0%, #b98317  51%, #fbc954  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-87:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .button-87:active {
+    transform: scale(0.95);
+  }
+  
+  /* *********** Media Queries *********** */
+  
+  /* For tablets */
+  @media (max-width: 768px) {
+    .contact_section {
+      flex-direction: column; /* Stack the sections vertically */
+      padding: 20px;
+    }
+  
+    .container_first, .container_second {
+      width: 100%; /* Full width for both sections */
+      padding: 20px;
+    }
+  
+    .container_first h1 {
+      font-size: 24px; /* Adjust font size */
+    }
+  
+    .input_box input {
+      font-size: 14px;
+    }
+  
+    .button-87 {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 480px) {
+    .contact_section {
+      padding: 15px;
+    }
+    .container_first{
+      height: 400px;
+    }
+    .container_first, .container_second {
+      padding: 15px;
+    }
+  
+    .container_first h1 {
+      font-size: 20px;
+    }
+  
+    label {
+      font-size: 15px;
+    }
+  
+    .input_box input {
+      height: 35px;
+      font-size: 13px;
+    }
+  
+    .button-87 {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  }
+  
